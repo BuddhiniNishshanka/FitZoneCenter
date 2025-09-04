@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FitZone Fitness Center</title>
+        <link rel="stylesheet" href="customer_query.css">
+        <link rel="icon" type="image/x-icon" href="background/fitzone_icon.jpg">
+        <style>
+            input[type="password"] {
+                background-color: transparent;
+                color: #fff;
+                border: 2px solid #FFF200;
+                border-radius: 10px;
+                padding: 8px;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <a class="back-btn" href="home.html#membership"> Back to Dashboard </a>
+
+        <div class="payment-container">
+            <h2>Make <span>Payment</span></h2>
+            <form class="payement-form" action="save_payment.php" method="POST">
+
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" required> <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required> <br><br>
+
+                <label for="membershipType">Membership Type:</label><br>
+                <select id="membershipType" name="membershipType" required>
+                    <option value="Platinum">Platinum</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                </select> <br><br>
+
+                <label for="bank">Bank:</label><br>
+                <select id="bank" name="bank" required>
+                    <option value="BOC">BOC</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="HNB">HNB</option>
+                    <option value="Sampath">Sampath</option>
+                    <option value="NSB">NSB</option>
+                    <option value="DFCC">DFCC</option>
+                    <option value="Seylan">Seylan</option>
+                    <option value="NDB">NDB</option>
+                </select> <br><br>
+
+                <label for="cardNumber">Card Number:</label><br>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required> <br><br>
+
+                <label for="expiry">Expiry Date:</label><br>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required> <br><br>
+
+                <label for="cvv">CVV:</label><br>
+                <input type="password" id="cvv" name="cvv" maxlength="3" required> <br><br>
+
+                <button class="sub-btn" type="submit">Proceed to Pay</button>
+
+            </form>
+        </div>
+    
+    </body>
+</html>

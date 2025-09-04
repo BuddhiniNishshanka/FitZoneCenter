@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FitZone Fitness Center</title>
+        <link rel="stylesheet" href="contact_us.css">
+        <link rel="icon" type="image/x-icon" href="background/fitzone_icon.jpg">
+    </head>
+    <body>
+        
+        <a class="back-btn" href="home.html">Back to Dashboard</a>
+
+        <h2>Get in touch <span>with us</span></h2> <br>
+
+        <form action="contact_us.php" method="POST">
+            <label for="name">Name:</label> <br>
+            <input type="text" name="name" required> <br><br>
+
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" required> <br><br>
+
+            <label for="subject">Subject:</label> <br>
+            <input type="text" name="subject"> <br><br>
+
+            <label for="message">Message:</label> <br>
+            <textarea name="message" rows="5" required></textarea> <br><br>
+
+            <button class="sub-btn" type="submit">Submit your Feedback</button>
+        </form>
+
+        <!--Footer Section-->
+
+        <footer class="footer">
+            <div class="social">
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAVdJREFUaEPt2CFLBEEYxvHfgRhFg6AImjXZRJsfQzBZxWq0iMFiNFhM+jHEIlaDwayiTdRmEHTAcBy7y84x3s3CvLBph5n/PvPM8w7b08HqdZBZgR7VrhWlG5SexRpW8Pn3fOAG77E79J9Kr+II65ipAdvEdQ7QEzjBXguYbKCPsd8COAzJAjp49p7WUZoF9CW2WqqchdLhUL9hugL6C2e4xWvf+7txp8cUQoxV1S5OI3agcWjKyJvHS81qy3joGvQinnKEXsBzDdgSHgt0IgWyVzo0hasEHxta/nfsPMOmRwro4PHg9egaJ3S43YWPj65xQp//JspONHHExWZw7hT2OMBh16C3cTFK6Kq15gYuQ/1jsm0uBbrJNsOmR7FH7GEsSpf0aPBMsUexR7FHvQKljZc23qDAJDZq3od/eOF/XpJKmdNJgNpMUqDbqJRiTFE6hYpt5vgB0yBNLlSDpwQAAAAASUVORK5CYII="/></a>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAqBJREFUaEPtmEuoTlEUx39Xeb/SFSJCXnXzGFEUhSgZICUjGRgoMrklBiITYURkaMbEQCIGiJTXQEkUIRQhRUyksP+3ferc4+xzvru+7ThXZ9XX99V31n/9z9prr1cH/VA6+iFnGtJVnVrj6cbTBR5owqNO4TEUWAZMByYD36EnVU70n+EBsi+BV4H/PgFvAX1LfgHvgKetvHhReIwEDgLbgGGtgEV6Ri97HtgHfM3DDJGWZ88BnZGIWGB0ChuAm1nlPNKDgWc+FCzGYuq8BmYAP9KgeaS7gSMxLbeJtQs4Vkb6ArC2TUMx1RWmG8tIP/eZIqbhdrAeufs1t4y00k+d5DMwpoj0WOCjkbFu+VmfJmNnnV53L3sR5wBPjKSvu/S0HBjtc+wOYJARK6s2Lu3MLOlFwB2joWvAipSuKuhRYL0RL60mLBWdHsmSlqeuGo0kns6qL3VF6jgwz4grtS7gcYj0GuCiETxEOoHbAhwCJhjw57vq+DBEejVw2QAqFZ3QyhJdZYG7wMw+2lgI3A+RXgVc6SNg8ngZ6U2u8ToMTDHg667d+xsxHSItr55s4RSK3qUwPJY48FsGT+SFh1rb/a5n3gkMNGImarN8E5ebPRYAD4wGEk8rIyWXbrwRK6smnA+h8JgGvDAaEundwAlAMRhTCiviiNC00AKDb66YSD+2aCyblAbN66e/AKNiW24D7zawuIz0DUBVrC5y2g3IW8tIH/ANT11Ib3dV9FQZac1kmhHrIG/yilFoGl8HnHG9wpB/zHyz79F70Sjae8wG9vr4nloxeTVHe4BLeXYtuzylH/UPWjVkZUBq86TdSWj7pCWMUtl7d39++g2Tfqtn1hCi1UFQLKQrdvqf5hrSVR1B4+nG0032qCoG/jdP/waMll4ukKgU8gAAAABJRU5ErkJggg=="/></a>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAABRlJREFUaEPtmWWIblUUhp9rIDa2oqL+ELl2IdjYioUIBgomiq1YiC0KdmGBieK1/iiI2J2oKLb+UOzAbjD3c1l72HM89X3z3QuDd/2ZmXPW3vs9K9+1ZwqTUKZMQszMAj2zvPa/s/TywDLAHENY+E/gU+CDIdYOHNMnAjsCGw5zWMOap4F7gcuA3/vs2zc81gFuBVbqs+mQOu8my+8DvNC1vg/oE4Dzajb6BngdeBL4p+ug4r3htDmwKjB/zTq9eX7bfl2g16t8+UPAhcBLwLcDAG1SXTpC7WLA37N47otNi7pAa0ktolwEHDcCoHVbaPFpyRg7xMs3gNWGAX0UcGksNFk2HjHgPYCpwEfA9cCiwHspIReKc44pzh93dJulnwE2CO3NgMdHCFrAtxX7bQfcDxwKXBnPn22qUk2gFwS+g+kl8Yf4+kGSbW5gZeAt4Leajz0LOLV4fi5wErA48GU897yFge+r65tAa2EtrWhhLd0ly0bMG0arA7MnYH8BrwJPRU58EpsckBrTdfH7++nnGcAt8ffnwJLx+/rA831Bb5lcY6VQ7gR2b0EsOBP0tFSq5mnR+zl0Lo+PMSQ2Bd4sALvcj1wj9tkWeKAv6J2Ae0L5WuCgBjCzJS88AWxUeW9nMzRWAeaqvNNzW6QP+LthT+t+TvpdgLv7gt67+Hrr8vENB5ycuMfZxbuXUwweHS6VX9hI/KBL0uFrFnptDeSRaD6qm7B39AW9f5Qh9QVVJk3eQxcK0vBQrgGOAARblTmBqwFjWfkjPkJvVOXh8ITP9wRu7wv64ACh/umA2V4Vw+bAePhKIj3rtrhcNa0ur1g71ljaDh8l6MNSsb8iNjwFOKdmc9usQBVZn3W1S+Qcul9palhleAxk6UNSzbwqNrccnVlBYwKabLpdmRf4tQtx6FlFFPVdVxWrxdbx0NySXY6Tpjq9H3BDaMq4TJxSVgCsr8oXwFI9AGeVr4FF4g+HCIeBUqwWO8cDcdzUF/S+wI2hLAM7trJwWEvbaXOHs1POV5MHllpLrmJByDjGIDRZugu0G0hPHQ4U66ox2iVl03qu4DblOqeY7eOBQ8HNw1i6iZLahnMJezDVZrtXGz/RO48BmwQIc8aEr8p9qcrYLZW9grKO0+lj6SbQNgutneu0JczG0lSnrUa5s7bVaQ2wVaDcLXXVu/paWrfkBGgj//KNsrJYr48EdL1kydpsOZRvSKKytHVEaUH2xkBt3ProJKFoITtdnehyGVzm3VmnjXsIStbYFEo2IMctxRzIdX3s/KbwKBNG9+imJpEQyYeddNqGCkFaieTNhkeT6K3MU2xG5kGvmPaq4J3QlM/Ka7vEhmC7NwwcArLYRF5LQCVXj3ZtkrzqlC/5V5xPpa69QMuLfwlN62kbT67D4WRt4/g4Jd9nPYBmFW+tylunBVKP+KkvaPWsu/kmaZsUt2b1jJaS8xgmmVz1srRK5TT+dsx8MxK0U7jTuFO5Ukcfpr/ouvfw/sHpQ2lqBqP4EO89nBEz5/gxEaUV03T+Vd3mXaCrN0xa3DosUR+V7BqXj+UNU237zgd2gVbPUclOV4oTs65sEpnfh2GtXAnqdNdKZdBkK8XcMYcapQ9o27Tt18632KjMW7OP7O+CMFLdXcnYkj6gs7JxZ3Jqher0PZFv8X7F2yU7738uZoaJ6TYwbf8JWCLx4OUiRPKNUbnXTP1PwEQsOrK1g4THyA6d6EazQE/Ugn3XT0pL/wt5QfYur5hPXQAAAABJRU5ErkJggg=="/></a>
+            </div>
+
+            <p class="copyright">
+                &copy; FitZone Fitness 2025 - All Rights Reserved
+            </p>
+        </footer>
+
+    </body>
+</html>

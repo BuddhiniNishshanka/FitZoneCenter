@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> FitZone Fitness Center </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="background/fitzone_icon.jpg">
+
+        <style>
+            .back-btn{
+                display: inline-block;
+                border: 1px solid #FFF200;
+                border-radius: 2rem;
+                padding: 10px 20px;
+                margin-top: 20px;
+                margin-left: 20px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            .back-btn:hover{
+                background-color: aqua;
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a class="back-btn" href="home.html">Back to Dashboard</a>
+
+        <div class="reg_form">
+            <form action="register.php" method="post">
+                <h1> REGISTER</h1>
+                
+                <input type="text" name="username" placeholder="Enter Username Here" required> <br>
+                <input type="password" name="password" placeholder="Enter Password Here" required> <br>
+                <input type="password" name="cpassword" placeholder="Confirm Password" required> <br>
+                <input type="text" name="email" placeholder="Enter Email Address Here" required> <br>
+                <input type="text" name="phone_number" placeholder="Enter Phone Number Here" required> <br>
+                Male <input type="radio" class="gender" name="gender" value="Male"> 
+                Female <input type="radio" class="gender" name="gender" value="Female">  <br>
+
+
+                <button class="loreg-btn" type="submit" value="register"> Sign Up </button>
+
+                <p class="link"> Already have an account <br>
+                <a href="login.html"> Log In</a> Here </p>
+            </form>
+        </div>
+    </body>
+</html>

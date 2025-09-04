@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 5px;
+    font-family: Century;
+    color: #fff;
+}
+
+body{
+    padding: 20px;
+    background: url(healthyrecipes/backgroundhr.jpeg) no-repeat center fixed;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;   /*covers entire viewport*/
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: -1; /*Keep overlay behind all the content*/
+}
+
+a{
+    display: inline-block;
+    border: 1px solid #FFF200;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    /*margin-top: 20px;*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover{
+    background-color: aqua;
+    color: black;
+}
+
+span{
+    color: aqua;
+}
+
+h2{
+    color: yellow;
+    margin-left: 50px;
+}
+
+.healthyrecipes .heading{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 65px;
+}
+
+.healthyrecipes-content{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.2rem;
+}
+
+.row{
+    background-color: black;
+    border-radius: 2rem;
+    border: 3px solid #00f0ff;
+    padding: 25px;
+    transition: all 0.5 ease;
+}
+
+.row img{
+    width: 8rem;
+    border-radius: 50%;
+    border: 2px solid #00f0ff;
+    margin-bottom: 10px;
+    line-height: 1.4px;
+    align-items: center;
+}
+
+.row h4{
+    font-size: 20px;
+    font-weight: 70px;
+    margin-bottom: 10px;
+}
+
+.row p{
+    line-height: 2;
+    color: #FFF200;
+}
+
+.row:hover{
+    border: 1px solid #45FFCA;
+    transform: translateY(-5px) scale(1.03);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

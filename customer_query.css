@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 5px;
+    color: #fff;
+}
+
+body{
+    font-family: Arial;
+    padding: 20px;
+    background: url(background/query.jpg) no-repeat center fixed;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;  
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: -1; /*Keep overlay behind all the content*/
+}
+
+.back-btn{
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #FFF200;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: aqua;
+}
+
+.back-btn:hover{
+    background-color: aqua;
+    color: black;
+}
+
+
+h2{
+    text-align: center;
+    font-family: Century;
+    font-size: 45px;
+    color: #FFF200;
+}
+
+span{
+    color: aqua;
+}
+
+form{
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    width: 70%;
+    padding: 15px 25px;
+    width: 400px;
+    margin: auto;
+    border-radius: 12px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #FFF200;
+    border-radius: 10px;
+    padding: 8px;
+    width: 300px;
+}
+
+select option{
+    background-color: black;
+}
+
+textarea{
+    width: 98%;
+}
+
+label{
+    font-weight: bold;
+}
+
+.sub-btn{
+    border: 1px solid #FFF200;
+    color: #fff;
+    background: transparent;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-top: 12px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sub-btn:hover{
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+}

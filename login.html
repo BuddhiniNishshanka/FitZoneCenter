@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> FitZone Fitness Center </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="background/fitzone_icon.jpg">
+        <style>
+            .back-btn{
+                display: inline-block;
+                border: 1px solid #FFF200;
+                border-radius: 2rem;
+                padding: 10px 20px;
+                margin-top: 20px;
+                margin-left: 20px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            .back-btn:hover{
+                background-color: aqua;
+                color: black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <a class="back-btn" href="home.html">Back to Dashboard</a>
+
+        <div class="log_form">
+            <form action="login.php" method="post">
+                <h1> Login Here</h1>
+
+                <input type="text" name="username" placeholder="Enter Username Here">
+                <input type="password" name="password" placeholder="Enter Password Here">
+
+                <button class="loreg-btn" type="submit" value="login"> Log In </button>
+
+                <p class="link"> Don't have an account <br>
+                <a href="register.html"> Sign Up </a> Here </p> 
+
+            </form>
+        </div>
+    </body>
+
+</html>
+
