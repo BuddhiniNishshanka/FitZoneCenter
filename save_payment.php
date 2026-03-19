@@ -19,7 +19,7 @@ $cardNumber = $_POST['cardNumber'];
 $expiry = $_POST['expiry'];
 $cvv = $_POST['cvv'];
 
-$query = "INSERT INTO payments (fullName, email, membership_type, bank, card_number, expiry_date, cvv) 
+$query = "INSERT INTO payments (full_name, email, membership_type, bank, card_number, expiry_date, cvv) 
     VALUES ('$fullName', '$email', '$membershipType', '$bank', '$cardNumber', '$expiry', '$cvv') ";
 
 if (mysqli_query($conn, $query)) {
