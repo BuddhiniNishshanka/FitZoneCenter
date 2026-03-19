@@ -16,16 +16,16 @@ if (isset($_GET['delete_id'])) {
     $deleteId = $_GET['delete_id']; 
 
     /*Prevent delete admind and staff */
-    $checkRoleQuery = "SELECT role FROM users WHERE id = '$selectedId'";
+    $checkRoleQuery = "SELECT role FROM users WHERE id = '$deleteId'";
     $checkRoleResult = mysqli_query($conn, $checkRoleQuery);
     $roleRow = mysqli_fetch_assoc($checkRoleResult);
 
     if ($roleRow['role'] === 'customer') {
         $deleteQuery = "DELETE FROM users WHERE id = '$deleteId'";
         if (mysqli_query($conn, $deleteQuery)) {
-            echo "<script> alert ('User deleted successfully!'); window.location.hfer='members.php';</script>";
+            echo "<script> alert ('User deleted successfully!'); window.location.href='members.php';</script>";
         } else {
-            "<script> alert ('Error deleting user!');</script>";
+            echo "<script> alert ('Error deleting user!');</script>";
         }
     } else {
         echo "<script> alert ('only customers can be deleted!'); </script>";
